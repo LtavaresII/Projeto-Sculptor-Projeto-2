@@ -1,5 +1,5 @@
 # Projeto-Sculptor-(Projeto-2)
 
-Segunda perte do projeto Sculptor
+Segunda parte do projeto Sculptor
 
 Componentes: Luís Fernando Tavares
