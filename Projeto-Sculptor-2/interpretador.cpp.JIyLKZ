@@ -1,0 +1,45 @@
+#include "interpretador.h"
+#include <vector>
+#include "figurageometrica.h"
+#include <string>
+#include <sstream>
+#include <fstream>
+#include <iostream>
+
+Interpretador::Interpretador()
+{
+
+}
+
+std::vector<FiguraGeometrica *> Interpretador::parse(std::string filename)
+{
+    std::vector<FiguraGeometrica *> figs;
+    std::ifstream fin;
+    std::stringstream ss;
+    std::string s, token;
+
+    fin.open(filename.c_str());
+    //verifica se o fluxo foi aberto
+    if(!fin.is_open()){
+        std::cout << "nao abriu" << filename <<std::endl;
+        exit(0);
+    }
+    while (fin.good()) {
+
+    }
+}
+
+int Interpretador::getX()
+{
+
+}
+
+int Interpretador::getY()
+{
+
+}
+
+int Interpretador::getZ()
+{
+
+}

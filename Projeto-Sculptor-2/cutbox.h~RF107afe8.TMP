@@ -1,0 +1,11 @@
+#ifndef CUTBOX_H
+#define CUTBOX_H
+
+
+class cutbox
+{
+public:
+    cutbox();
+};
+
+#endif // CUTBOX_H
