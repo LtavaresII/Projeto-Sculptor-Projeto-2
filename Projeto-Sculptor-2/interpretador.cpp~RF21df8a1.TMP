@@ -19,9 +19,9 @@ Interpretador::Interpretador()
 
 }
 
-std::vector<FiguraGeometrica*> Interpretador::parse(std::string filename)
+std::vector<FiguraGeometrica *> Interpretador::parse(string filename)
 {
-   std::vector<FiguraGeometrica*> figs;
+   std::vector<FiguraGeometrica *> figs;
    std::ifstream fin;
    std::stringstream ss;
    std::string s, token;
@@ -42,20 +42,20 @@ std::vector<FiguraGeometrica*> Interpretador::parse(std::string filename)
             ss >> token;
             //realiza o parsing dos tokens
             if(ss.good()){
-                // dimensoes da tela
+            // dimensoes da tela
                 if(token.compare("dim")==0){
                    ss >> dimx >> dimy >> dimz;
                 }
                 // usuario define brush
                 else if(token.compare("putvoxel")== 0){
-                    int x0,y0,z0;
-                    ss>>x0>>y0>>z0>>r>>g>>b>>a;
-                    figs.push_back(new putVoxel(x0,y0,z0,r,g,b,a));
+                    int x,y,z;
+                    ss>>x>>y>>z>>r>>g>>b>>a;
+                    figs.push_back(new putVoxel(x,y,z,r,g,b,a));
                 }
                 else if (token.compare("cutvoxel")== 0) {
-                    int x0,y0,z0;
-                    ss>>x0>>y0>>z0;
-                    figs.push_back(new cutVoxel(x0,y0,z0));
+                    int x,y,z;
+                    ss>>x>>y>>z;
+                    figs.push_back(new cutVoxel(x,y,z));
                 }
                 else if (token.compare("putbox")== 0) {
                     int x0,x1,y0,y1,z0,z1;

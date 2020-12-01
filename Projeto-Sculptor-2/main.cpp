@@ -17,18 +17,18 @@ int main()
 
     vector<FiguraGeometrica*> figs;
 
-    figs = parser.parse("/Users/Luís_Tavares/Área de Trabalho/esculturas.txt");
+    figs = parser.parse("");
 
     s1 = new Sculptor(parser.getX(), parser.getY(), parser.getZ());
 
     for(size_t i=0; i<figs.size();i++){
-        cout<< "draw\n";
+        std::cout<< "draw\n";
         figs[i]->draw(*s1);
     }
 
     s1->limpaVoxels();
 
-    s1->writeOFF((string)"/Users/Luís_Tavares/Área de Trabalho/saida.off");
+    s1->writeOFF((string)"");
     for(size_t i=0; i<figs.size();i++){
         delete figs[i];
     }
