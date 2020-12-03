@@ -1,0 +1,165 @@
+\hypertarget{class_sculptor}{}\doxysection{Sculptor Class Reference}
+\label{class_sculptor}\index{Sculptor@{Sculptor}}
+
+
+A Classe \mbox{\hyperlink{class_sculptor}{Sculptor}}.  
+
+
+
+
+{\ttfamily \#include $<$sculptor.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sculptor_a014e3ef5517bf0e9d9e14486b6ac6433}{Sculptor}} (int \+\_\+nx, int \+\_\+ny, int \+\_\+nz)
+\begin{DoxyCompactList}\small\item\em Costrutor da classe \mbox{\hyperlink{class_sculptor}{Sculptor}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sculptor_a8f159bf97458326f16d2e238e11be7ff}\label{class_sculptor_a8f159bf97458326f16d2e238e11be7ff}} 
+\mbox{\hyperlink{class_sculptor_a8f159bf97458326f16d2e238e11be7ff}{$\sim$\+Sculptor}} ()
+\begin{DoxyCompactList}\small\item\em Destruidor da classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sculptor_af1d69da01379874b0dfd6454787cb562}{set\+Color}} (float r, float g, float b, float alpha)
+\begin{DoxyCompactList}\small\item\em Determina as cores e o grau de transparencia da matriz voxel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sculptor_a4bdea3048b419d58e93074060eaa7b52}{put\+Voxel}} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em Coloca a matriz voxel no sculptor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sculptor_ad9d714a35fc8ae16d06eb5df37c3493c}{cut\+Voxel}} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em Retira a matriz voxel do sculptor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sculptor_a4faae5ab2d72f2f682005f468e7e8a92}{write\+O\+FF}} (string filename)
+\begin{DoxyCompactList}\small\item\em Escreve um arquivo do tipo O\+FF com os voxels armazenados. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sculptor_ac8baf0ca21abebb71a359eaf5e48b80b}\label{class_sculptor_ac8baf0ca21abebb71a359eaf5e48b80b}} 
+void \mbox{\hyperlink{class_sculptor_ac8baf0ca21abebb71a359eaf5e48b80b}{limpa\+Voxels}} ()
+\begin{DoxyCompactList}\small\item\em Retira os voxels ocultos na figura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sculptor_a4ca53a2f2fbf41ca42dfe729ebe693f1}\label{class_sculptor_a4ca53a2f2fbf41ca42dfe729ebe693f1}} 
+\mbox{\hyperlink{struct_voxel}{Voxel}} $\ast$$\ast$$\ast$ \mbox{\hyperlink{class_sculptor_a4ca53a2f2fbf41ca42dfe729ebe693f1}{v}}
+\begin{DoxyCompactList}\small\item\em Armazena a matriz voxel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sculptor_ad1e32f9042538419a3bc7b376f7813b8}\label{class_sculptor_ad1e32f9042538419a3bc7b376f7813b8}} 
+int \mbox{\hyperlink{class_sculptor_ad1e32f9042538419a3bc7b376f7813b8}{nx}}
+\begin{DoxyCompactList}\small\item\em Armazena os tamanhos da matriz voxel na dimensão x. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sculptor_a1ce2ff97ec94927928ab3f5ec4ba6761}\label{class_sculptor_a1ce2ff97ec94927928ab3f5ec4ba6761}} 
+int \mbox{\hyperlink{class_sculptor_a1ce2ff97ec94927928ab3f5ec4ba6761}{ny}}
+\begin{DoxyCompactList}\small\item\em Armazena os tamanhos da matriz voxel na dimensão y. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sculptor_a33204e7df26a7ee4c7192381a24335d3}\label{class_sculptor_a33204e7df26a7ee4c7192381a24335d3}} 
+int \mbox{\hyperlink{class_sculptor_a33204e7df26a7ee4c7192381a24335d3}{nz}}
+\begin{DoxyCompactList}\small\item\em Armazena os tamanhos da matriz voxel na dimensão z. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sculptor_af6d88b1884203d90fadad05eb009abd0}\label{class_sculptor_af6d88b1884203d90fadad05eb009abd0}} 
+float \mbox{\hyperlink{class_sculptor_af6d88b1884203d90fadad05eb009abd0}{rv}}
+\begin{DoxyCompactList}\small\item\em Armazena a cor vermelha. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sculptor_a4d7b81dfa51998d6f5e748d074a3b07e}\label{class_sculptor_a4d7b81dfa51998d6f5e748d074a3b07e}} 
+float \mbox{\hyperlink{class_sculptor_a4d7b81dfa51998d6f5e748d074a3b07e}{gv}}
+\begin{DoxyCompactList}\small\item\em Armazena a cor verde. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sculptor_a4fb9c6c537f15cde094e05be56a20ee9}\label{class_sculptor_a4fb9c6c537f15cde094e05be56a20ee9}} 
+float \mbox{\hyperlink{class_sculptor_a4fb9c6c537f15cde094e05be56a20ee9}{bv}}
+\begin{DoxyCompactList}\small\item\em Armazena a cor azul. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sculptor_a6fd0157dcf17582f0edd5fddf157604e}\label{class_sculptor_a6fd0157dcf17582f0edd5fddf157604e}} 
+float \mbox{\hyperlink{class_sculptor_a6fd0157dcf17582f0edd5fddf157604e}{a}}
+\begin{DoxyCompactList}\small\item\em Armazena o grau de transparencia da matriz voxel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A Classe \mbox{\hyperlink{class_sculptor}{Sculptor}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sculptor_a014e3ef5517bf0e9d9e14486b6ac6433}\label{class_sculptor_a014e3ef5517bf0e9d9e14486b6ac6433}} 
+\index{Sculptor@{Sculptor}!Sculptor@{Sculptor}}
+\index{Sculptor@{Sculptor}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{Sculptor()}{Sculptor()}}
+{\footnotesize\ttfamily Sculptor\+::\+Sculptor (\begin{DoxyParamCaption}\item[{int}]{\+\_\+nx,  }\item[{int}]{\+\_\+ny,  }\item[{int}]{\+\_\+nz }\end{DoxyParamCaption})}
+
+
+
+Costrutor da classe \mbox{\hyperlink{class_sculptor}{Sculptor}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+nx} & Armazena o valor da matriz em x \\
+\hline
+{\em \+\_\+ny} & Armazena o valor da matriz em y \\
+\hline
+{\em \+\_\+nz} & Armazena o valor da matriz em z \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sculptor_ad9d714a35fc8ae16d06eb5df37c3493c}\label{class_sculptor_ad9d714a35fc8ae16d06eb5df37c3493c}} 
+\index{Sculptor@{Sculptor}!cutVoxel@{cutVoxel}}
+\index{cutVoxel@{cutVoxel}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{cutVoxel()}{cutVoxel()}}
+{\footnotesize\ttfamily void Sculptor\+::cut\+Voxel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+
+Retira a matriz voxel do sculptor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sculptor_a4bdea3048b419d58e93074060eaa7b52}\label{class_sculptor_a4bdea3048b419d58e93074060eaa7b52}} 
+\index{Sculptor@{Sculptor}!putVoxel@{putVoxel}}
+\index{putVoxel@{putVoxel}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{putVoxel()}{putVoxel()}}
+{\footnotesize\ttfamily void Sculptor\+::put\+Voxel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+
+Coloca a matriz voxel no sculptor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sculptor_af1d69da01379874b0dfd6454787cb562}\label{class_sculptor_af1d69da01379874b0dfd6454787cb562}} 
+\index{Sculptor@{Sculptor}!setColor@{setColor}}
+\index{setColor@{setColor}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void Sculptor\+::set\+Color (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{alpha }\end{DoxyParamCaption})}
+
+
+
+Determina as cores e o grau de transparencia da matriz voxel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & (Vermelho) \\
+\hline
+{\em g} & (Verde) \\
+\hline
+{\em b} & (Azul) \\
+\hline
+{\em alpha} & (Grau de Transparencia) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sculptor_a4faae5ab2d72f2f682005f468e7e8a92}\label{class_sculptor_a4faae5ab2d72f2f682005f468e7e8a92}} 
+\index{Sculptor@{Sculptor}!writeOFF@{writeOFF}}
+\index{writeOFF@{writeOFF}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{writeOFF()}{writeOFF()}}
+{\footnotesize\ttfamily void Sculptor\+::write\+O\+FF (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Escreve um arquivo do tipo O\+FF com os voxels armazenados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & (Nome do Arquivo) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Luís Tavares/\+Documents/\+U\+F\+R\+N/\+P\+A/\+Projeto-\/\+Sculptor-\/2/\+Sculptor-\/2/sculptor.\+h\item 
+C\+:/\+Users/\+Luís Tavares/\+Documents/\+U\+F\+R\+N/\+P\+A/\+Projeto-\/\+Sculptor-\/2/\+Sculptor-\/2/sculptor.\+cpp\end{DoxyCompactItemize}
