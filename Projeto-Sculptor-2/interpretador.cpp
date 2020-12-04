@@ -40,8 +40,6 @@ std::vector<FiguraGeometrica*> Interpretador::parse(std::string filename)
             ss.clear();
             ss.str(s);
             ss >> token;
-            //realiza o parsing dos tokens
-            if(ss.good()){
                 // dimensoes da tela
                 if(token.compare("dim")==0){
                    ss >> dimx >> dimy >> dimz;
@@ -87,7 +85,6 @@ std::vector<FiguraGeometrica*> Interpretador::parse(std::string filename)
                     ss>>xcenter>>ycenter>>zcenter>>rx>>ry>>rz;
                     figs.push_back(new cutEllipsoid(xcenter,ycenter,zcenter,rx,ry,rz));
                 }
-            }
         }
     }
 
