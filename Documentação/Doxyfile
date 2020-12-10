@@ -38,7 +38,7 @@ PROJECT_NAME           = "Projeto Sculptor"
 # could be handy for archiving the generated documentation or if some version
 # control system is used.
 
-PROJECT_NUMBER         = "v2.0.0 - Beta"
+PROJECT_NUMBER         = "v2.1.0 - Beta"
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer a
@@ -844,7 +844,7 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = "C:\Users\Luís Tavares\Documents\UFRN\PA\Projeto-Sculptor-2\Sculptor-2"
+INPUT                  = ../../../../Projeto-Sculptor-2
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
