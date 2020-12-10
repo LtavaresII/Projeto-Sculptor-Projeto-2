@@ -1,11 +1,12 @@
 #ifndef CUTBOX_H
 #define CUTBOX_H
 #include "figurageometrica.h"
+#include "sculptor.h"
 
 /**
- * @brief Classe cutBox
+ * @brief Classe CutBox
  */
-class cutBox :
+class CutBox :
         public FiguraGeometrica
 {
 private:
@@ -43,7 +44,7 @@ public:
      * @param z0 (z incial)
      * @param z1 (z final)
      */
-    cutBox(int x0, int x1, int y0, int y1, int z0, int z1);
+    CutBox(int x0, int x1, int y0, int y1, int z0, int z1);
     /**
      * @brief Desenha a matriz sculptor
      * @param s (matriz sculptor)

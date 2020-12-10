@@ -1,11 +1,12 @@
 #ifndef PUTSPHERE_H
 #define PUTSPHERE_H
 #include "figurageometrica.h"
+#include "sculptor.h"
 
 /**
- * @brief Classe putSphere
+ * @brief Classe PutSphere
  */
-class putSphere:
+class PutSphere:
         public FiguraGeometrica
 {
     /**
@@ -52,11 +53,11 @@ public:
      * @param b (cor azul)
      * @param a (grau de transparencia)
      */
-    putSphere(int xcenter, int ycenter, int zcenter, int radius,float r, float g, float b, float a);
+    PutSphere(int xcenter, int ycenter, int zcenter, int radius,float r, float g, float b, float a);
     /**
     * @brief Destrutor da classe
     */
-    ~putSphere();
+    ~PutSphere();
     /**
      * @brief Desenha a matriz sculptor
      * @param s (matriz sculptor)

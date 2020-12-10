@@ -8,19 +8,19 @@
 class FiguraGeometrica{
 protected:
     /**
-     * @brief r
+     * @brief r (Cor Vermelho)
      */
     float r;
     /**
-     * @brief g
+     * @brief g (Cor Verde)
      */
     float g;
     /**
-     * @brief b
+     * @brief b (Cor Azul)
      */
     float b;
     /**
-     * @brief a
+     * @brief a (Grau de Transparencia)
      */
     float a;
 public:

@@ -1,11 +1,12 @@
 #ifndef CUTELLIPSOID_H
 #define CUTELLIPSOID_H
 #include "figurageometrica.h"
+#include "sculptor.h"
 
 /**
- * @brief Classe cutEllipsoid
+ * @brief Classe CutEllipsoid
  */
-class cutEllipsoid :
+class CutEllipsoid :
         public FiguraGeometrica
 {
     /**
@@ -42,7 +43,7 @@ public:
      * @param ry (raio de y)
      * @param rz (raio de z)
      */
-    cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz);
+    CutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz);
     /**
      * @brief Desenha a matriz sculptor
      * @param s (matriz sculptor)

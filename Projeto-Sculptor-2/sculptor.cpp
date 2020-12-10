@@ -12,22 +12,22 @@ using namespace std;
 
 Sculptor::Sculptor(int _nx, int _ny, int _nz)
 {
+    //Fixa os valores para 0, caso forem menor que 0
+    if((_nx<=0) || (_ny<=0) || (_nz<=0) ){
+        _nx=_ny=_nz=0;
+    }
+
     //Guarda os valores das variaveis
     nx = _nx;
     ny = _ny;
     nz = _nz;
 
-    //Fixa os valores para 0, caso forem menor que 0
-    if((nx<=0) || (ny<=0) || (nz<=0) ){
-        nx=ny=nz=0;
-    }
-
     int i,j,k;
 
     // Cria a matriz Voxel em 3 dimensões
-    v = new Voxel**[nx];
-    v[0] = new Voxel*[nx*ny];
-    v[0][0] = new Voxel[nx*ny*nz];
+    v = new Voxel**[_nx];
+    v[0] = new Voxel*[_nx*_ny];
+    v[0][0] = new Voxel[_nx*_ny*_nz];
 
     for(i=1;i<nz;i++){
         v[i] = v[i-1] + ny;
@@ -40,6 +40,10 @@ Sculptor::Sculptor(int _nx, int _ny, int _nz)
     for(i=0;i<nx;i++){
         for(j=0;j<ny;j++){
             for(k=0;k<nz;k++){
+                v[i][j][k].r = rv;
+                v[i][j][k].g = gv;
+                v[i][j][k].b = bv;
+                v[i][j][k].a = a;
                 v[i][j][k].isOn=false;
             }
         }
@@ -60,10 +64,10 @@ Sculptor::~Sculptor()
 void Sculptor::setColor(float r, float g, float b, float alpha)
 {
     // Cores e a opacidade do solido
-    rv = r;
-    gv = g;
-    bv = b;
-    a = alpha;
+    this->rv = r;
+    this->gv = g;
+    this->bv = b;
+    this->a = alpha;
 }
 
 void Sculptor::putVoxel(int x, int y, int z)

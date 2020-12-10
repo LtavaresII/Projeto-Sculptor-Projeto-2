@@ -1,11 +1,12 @@
 #ifndef PUTELLIPSOID_H
 #define PUTELLIPSOID_H
 #include "figurageometrica.h"
+#include "sculptor.h"
 
 /**
- * @brief Classe putEllipsoid
+ * @brief Classe PutEllipsoid
  */
-class putEllipsoid:
+class PutEllipsoid:
         public FiguraGeometrica
 {
     /**
@@ -62,11 +63,11 @@ public:
      * @param b (cor azul)
      * @param a (grau de transparencia)
      */
-    putEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz, float r, float g, float b, float a);
+    PutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz, float r, float g, float b, float a);
     /**
     * @brief Destrutor da classe
     */
-    ~putEllipsoid();
+    ~PutEllipsoid();
     /**
      * @brief Desenha a matriz sculptor
      * @param s (matriz sculptor)

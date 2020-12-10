@@ -2,12 +2,12 @@
 #include "figurageometrica.h"
 #include <math.h>
 
-cutSphere::cutSphere(int xcenter, int ycenter, int zcenter, int radius)
+CutSphere::CutSphere(int xcenter, int ycenter, int zcenter, int radius)
 {
     this->xcenter=xcenter,this->ycenter=ycenter,this->zcenter=zcenter,this->radius=radius;
 }
 
-void cutSphere::draw(Sculptor &s)
+void CutSphere::draw(Sculptor &s)
 {
     int i,j,k;
     int xc,yc,zc,rs;

@@ -1,11 +1,12 @@
 #ifndef PUTVOXEL_H
 #define PUTVOXEL_H
 #include "figurageometrica.h"
+#include "sculptor.h"
 
 /**
- * @brief Classe putVoxel
+ * @brief Classe PutVoxel
  */
-class putVoxel:
+class PutVoxel:
         public FiguraGeometrica
 {
     /**
@@ -20,6 +21,22 @@ class putVoxel:
     * @brief z
     */
     int z;
+    /**
+     * @brief r
+     */
+    float r;
+    /**
+     * @brief g
+     */
+    float g;
+    /**
+     * @brief b
+     */
+    float b;
+    /**
+     * @brief a
+     */
+    float a;
 public:
     /**
      * @brief Guarda as variaveis do voxel
@@ -31,7 +48,7 @@ public:
      * @param b (cor azul)
      * @param a (grau de transparencia)
      */
-    putVoxel(int x, int y, int z, float r, float g, float b, float a);
+    PutVoxel(int x, int y, int z, float r, float g, float b, float a);
     /**
      * @brief Desenha a matriz sculptor
      * @param s (matriz sculptor)
@@ -40,7 +57,7 @@ public:
     /**
     * @brief Destruidor da classe
     */
-    ~putVoxel();
+    ~PutVoxel();
 };
 
 #endif // PUTVOXEL_H

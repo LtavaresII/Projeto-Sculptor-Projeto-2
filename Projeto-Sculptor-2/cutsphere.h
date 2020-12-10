@@ -1,11 +1,12 @@
 #ifndef CUTSPHERE_H
 #define CUTSPHERE_H
 #include "figurageometrica.h"
+#include "sculptor.h"
 
 /**
- * @brief Classe cutSphere
+ * @brief Classe CutSphere
  */
-class cutSphere:
+class CutSphere:
         public FiguraGeometrica
 {
     /**
@@ -32,7 +33,7 @@ public:
      * @param zcenter (z central)
      * @param radius (raio)
      */
-    cutSphere(int xcenter, int ycenter, int zcenter, int radius);
+    CutSphere(int xcenter, int ycenter, int zcenter, int radius);
     /**
      * @brief Desenha a matriz sculptor
      * @param s (matriz sculptor)
