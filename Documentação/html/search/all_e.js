@@ -1,9 +1,9 @@
 var searchData=
 [
   ['_7efigurageometrica_32',['~FiguraGeometrica',['../class_figura_geometrica.html#ad13b9bccf1b14f6b9fbc662aad61ffd1',1,'FiguraGeometrica']]],
-  ['_7eputbox_33',['~putBox',['../classput_box.html#aa8bddb88c536421ee9ee7aec7e73a060',1,'putBox']]],
-  ['_7eputellipsoid_34',['~putEllipsoid',['../classput_ellipsoid.html#ae20016b0dcc08bdcb3ea86a41dba108a',1,'putEllipsoid']]],
-  ['_7eputsphere_35',['~putSphere',['../classput_sphere.html#aeca8caff4f0c76f50a375159a12300f5',1,'putSphere']]],
-  ['_7eputvoxel_36',['~putVoxel',['../classput_voxel.html#a4e2f82887ec1c1d88bf7905a0ea19f68',1,'putVoxel']]],
+  ['_7eputbox_33',['~PutBox',['../class_put_box.html#a030fced5c7acc62c9842e480c5729f2e',1,'PutBox']]],
+  ['_7eputellipsoid_34',['~PutEllipsoid',['../class_put_ellipsoid.html#a2a82dd453d32a966218d3bea49406872',1,'PutEllipsoid']]],
+  ['_7eputsphere_35',['~PutSphere',['../class_put_sphere.html#ab1c65114a718e71349497588ccb3e04b',1,'PutSphere']]],
+  ['_7eputvoxel_36',['~PutVoxel',['../class_put_voxel.html#ac3c14b19e69b462e3178b5dca92d7b34',1,'PutVoxel']]],
   ['_7esculptor_37',['~Sculptor',['../class_sculptor.html#a8f159bf97458326f16d2e238e11be7ff',1,'Sculptor']]]
 ];

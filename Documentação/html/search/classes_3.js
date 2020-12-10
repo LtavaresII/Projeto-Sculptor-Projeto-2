@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['putbox_44',['putBox',['../classput_box.html',1,'']]],
-  ['putellipsoid_45',['putEllipsoid',['../classput_ellipsoid.html',1,'']]],
-  ['putsphere_46',['putSphere',['../classput_sphere.html',1,'']]],
-  ['putvoxel_47',['putVoxel',['../classput_voxel.html',1,'']]]
+  ['putbox_44',['PutBox',['../class_put_box.html',1,'']]],
+  ['putellipsoid_45',['PutEllipsoid',['../class_put_ellipsoid.html',1,'']]],
+  ['putsphere_46',['PutSphere',['../class_put_sphere.html',1,'']]],
+  ['putvoxel_47',['PutVoxel',['../class_put_voxel.html',1,'']]]
 ];
