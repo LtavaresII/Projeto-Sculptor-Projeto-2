@@ -18,7 +18,7 @@ int main()
 
     vector<FiguraGeometrica*> figs;
 
-    figs = parser.parse("C:/Users/Luís Tavares/escultura.txt");
+    figs = parser.parse("escultura.txt");
 
     s1 = new Sculptor(parser.getX(), parser.getY(), parser.getZ());
 
@@ -29,7 +29,7 @@ int main()
 
     s1->limpaVoxels();
 
-    s1->writeOFF((string)"C:/Users/Luís Tavares/saida.off");
+    s1->writeOFF("saida.off");
     for(size_t i=0; i<figs.size();i++){
         delete figs[i];
     }
