@@ -97,22 +97,10 @@ void Sculptor::cutVoxel(int x, int y, int z)
     }
     v[x][y][z].isOn=false;
 }
+
 void Sculptor::writeOFF(string filename)
 {
-    int x =nx;
-    int y =ny;
-    int z =nz;
-    char off[x][y][z];
     int i,j,k;
-    //Preencher a string com 0 para verificar se é valido
-    for(i=0;i<nx;i++){
-        for(j=0;j<ny;j++){
-            for(k=0;k<nz;k++){
-                off[i][j][k] = 0;
-            }
-        }
-    }
-
     int nvox = 0;
     ofstream outfile (filename);
     outfile<<"OFF"<<endl;
@@ -120,7 +108,7 @@ void Sculptor::writeOFF(string filename)
     for(i=0;i<nx;i++){
         for(j=0;j<ny;j++){
             for(k=0;k<nz;k++){
-                if(v[i][j][k].isOn && (off[i][j][k] == 0)){
+                if(v[i][j][k].isOn==true){
                     nvox++;
                 }
             }
@@ -133,7 +121,7 @@ void Sculptor::writeOFF(string filename)
     for(i=0;i<nx;i++){
         for(j=0;j<ny;j++){
             for(k=0;k<nz;k++){
-                if(v[i][j][k].isOn && off[i][j][k] == 0){
+                if(v[i][j][k].isOn==true){
                     //Linha 1
                     outfile<<-0.5+i<<" "<<0.5+j<<" "<<-0.5+k<<endl;
                     //Linha 2
@@ -160,7 +148,7 @@ void Sculptor::writeOFF(string filename)
     for(i=0;i<nx;i++){
         for(j=0;j<ny;j++){
             for(k=0;k<nz;k++){
-                if(v[i][j][k].isOn && (off[i][j][k] == 0)){
+                if(v[i][j][k].isOn==true){
                     //Face 1
                     outfile<<"4 "<<0+nf*8<<" "<<3+nf*8<<" "<<2+nf*8<<" "<<1+nf*8<<" "<<fixed<<setprecision(1)<<v[i][j][k].r<<" "<<v[i][j][k].g<<" "<<v[i][j][k].b<<" "<<v[i][j][k].a<<endl
                     //Face 2
